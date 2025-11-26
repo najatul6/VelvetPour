@@ -16,17 +16,17 @@ const Hero = () => {
           >
             <div className="hero-content text-neutral-content text-center">
               <div className="flex flex-col gap-2 items-center md:w-9/12">
-                <p className="font-futuraPT text-xl md:text-5xl capitalize">
+                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 1 && "animate__animated animate__fadeInDown"}`}>
                   Taste the Excellence
                 </p>
-                <h2 className="uppercase font-americanCap tracking-wider text-3xl md:text-6xl">
+                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>
                   rich tradition for beers
                 </h2>
-                <p className="font-futuraPT md:text-3xl">
+                <p className={`font-futuraPT md:text-3xl ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>
                   All you need is a beer. First, it needs to be chilled, and
                   second, it needs to be of ours.You deserve to relax.
                 </p>
-                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500">buy now</button>
+                <button className={`bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500 ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>buy now</button>
               </div>
             </div>
           </div>
@@ -79,18 +79,18 @@ const Hero = () => {
                 "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider_092fcbab-a771-4f7d-87bf-064608d3f594_2000x_1_2000x.jpg?v=1613795507)",
             }}
           >
-            <div className="absolute left-12 text-neutral-content text-center">
+            <div className="absolute left-20 text-neutral-content text-center">
               <div className="flex flex-col gap-2 items-start md:w-9/12">
-                <p className="font-futuraPT text-xl md:text-5xl capitalize">
+                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 3 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css' : ''}`}>
                   exclusive offer
                 </p>
-                <h2 className="uppercase font-americanCap tracking-wider text-3xl md:text-6xl">
+                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 3 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_1' : ''}`}>
                   a plate for good beer
                 </h2>
-                <p className="font-futuraPT text-start md:text-3xl">
+                <p className={`font-futuraPT text-start md:text-3xl ${activeSlide === 3 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_2' : ''}`}>
                   If you're happy, you need it, and if you're sad also you need VelvetPour Beer.
                 </p>
-                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500">buy now</button>
+                <button className={`bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500 ${activeSlide === 3 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_3' : ''}`}>buy now</button>
               </div>
             </div>
           </div>
