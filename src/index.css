@@ -1,0 +1,27 @@
+@import url("https://fonts.cdnfonts.com/css/american-captain");
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  /* --color-base-300: #27211d;*/
+  --color-accent: #e07016;
+  --color-secondary:#27211d;
+}
+@theme {
+  --font-americanCap: "American Captain", sans-serif;
+  --font-futuraPT: "Futura PT", sans-serif;
+}
+body {
+  background: #27211d;
+}
+a.active{
+  color:white;
+}
+a:hover {
+  color: white;
+  transition: 0.4s;
+}
