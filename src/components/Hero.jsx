@@ -16,17 +16,17 @@ const Hero = () => {
           >
             <div className="hero-content text-neutral-content text-center">
               <div className="flex flex-col gap-2 items-center md:w-9/12">
-                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 1 && "animate__animated animate__fadeInDown"}`}>
+                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 1 && "animate__animated animate__fadeInDown animated_fadeIN_css"}`}>
                   Taste the Excellence
                 </p>
-                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>
+                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 1 && "animate__animated animate__fadeInUp animated_fadeIN_css_1"}`}>
                   rich tradition for beers
                 </h2>
-                <p className={`font-futuraPT md:text-3xl ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>
+                <p className={`font-futuraPT md:text-3xl ${activeSlide === 1 && "animate__animated animate__fadeInUp animated_fadeIN_css_2"}`}>
                   All you need is a beer. First, it needs to be chilled, and
                   second, it needs to be of ours.You deserve to relax.
                 </p>
-                <button className={`bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500 ${activeSlide === 1 && "animate__animated animate__fadeInUp"}`}>buy now</button>
+                <button className={`bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500 ${activeSlide === 1 && "animate__animated animate__fadeInUp animated_fadeIN_css_3"}`}>buy now</button>
               </div>
             </div>
           </div>
