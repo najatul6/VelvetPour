@@ -11,7 +11,7 @@ const Hero = () => {
             className="hero min-h-screen"
             style={{
               backgroundImage:
-                "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider_092fcbab-a771-4f7d-87bf-064608d3f594_2000x_1_2000x.jpg?v=1613795507)",
+                "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider2-bg_2000x.jpg?v=1613795521)",
             }}
           >
             <div className="hero-content text-neutral-content text-center">
@@ -26,7 +26,7 @@ const Hero = () => {
                   All you need is a beer. First, it needs to be chilled, and
                   second, it needs to be of ours.You deserve to relax.
                 </p>
-                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl">buy now</button>
+                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500">buy now</button>
               </div>
             </div>
           </div>
@@ -47,18 +47,18 @@ const Hero = () => {
                 "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider3-bg-new_2000x.jpg?v=1613795559)",
             }}
           >
-            <div className="absolute left-12 text-neutral-content text-center">
+            <div className="absolute left-20 text-neutral-content text-center w-3/6">
               <div className="flex flex-col gap-2 items-start md:w-9/12">
-                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animate__delay-0s ' : ''}`}>
+                <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css' : ''} `}>
                   Grab chilled
                 </p>
-                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animate__delay-0s ' : ''}`}>
+                <h2 className={`uppercase font-americanCap tracking-wider text-3xl md:text-6xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_1' : ''} `}>
                   a cold delight
                 </h2>
-                <p className={`font-futuraPT text-start md:text-3xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animate__delay-0s ' : ''}`}>
+                <p className={`font-futuraPT text-start md:text-3xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_2' : ''} `}>
                   Let your emotions come out with a beer in your hand. The taste that makes you feel awesome.
                 </p>
-                <button className={`bg-secondary capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animate__delay-0 ' : ''}`}>buy now</button>
+                <button className={`bg-secondary capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css_3' : ''} cursor-pointer hover:bg-white hover:text-[#27211d] duration-500`}>buy now</button>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Hero = () => {
             className="hero min-h-screen"
             style={{
               backgroundImage:
-                "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider2-bg_2000x.jpg?v=1613795521)",
+                "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider_092fcbab-a771-4f7d-87bf-064608d3f594_2000x_1_2000x.jpg?v=1613795507)",
             }}
           >
             <div className="absolute left-12 text-neutral-content text-center">
@@ -90,7 +90,7 @@ const Hero = () => {
                 <p className="font-futuraPT text-start md:text-3xl">
                   If you're happy, you need it, and if you're sad also you need VelvetPour Beer.
                 </p>
-                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl">buy now</button>
+                <button className="bg-[#f89808] capitalize font-futuraPT font-bold py-3 px-5 text-2xl md:text-5xl cursor-pointer hover:bg-white hover:text-[#27211d] duration-500">buy now</button>
               </div>
             </div>
           </div>

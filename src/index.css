@@ -15,6 +15,18 @@
   --font-americanCap: "American Captain", sans-serif;
   --font-futuraPT: "Futura PT", sans-serif;
 }
+.animated_fadeIN_css{
+  --animate-duration:1.2s;
+}
+.animated_fadeIN_css_1{
+  --animate-duration: 1.5s;
+}
+.animated_fadeIN_css_2{
+  --animate-duration: 1.7s;
+}
+.animated_fadeIN_css_3{
+  --animate-duration: 2s;
+}
 body {
   background: #27211d;
 }
