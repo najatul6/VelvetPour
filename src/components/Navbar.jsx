@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
           <div
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-[#27211d] rounded-box z-1 mt-3 w-52 p-2"
+            className="menu menu-sm dropdown-content bg-[#27211d] rounded-box z-10 mt-3 w-52 p-2"
           >
             <NavLink className="text-accent font-semibold text-lg" to={"/"}>
               Home
@@ -72,7 +72,7 @@ const Navbar = () => {
             SHOP
           </NavLink>
           <div className="w-20">
-            <div className="absolute flex justify-center items-center right-4 top-0 w-full">
+            <div className="absolute flex justify-center items-center right-4 top-0 w-full pointer-events-none">
               <div className="bg-[#27211d] pb-5 px-5 rounded-full">
                 <img
                   src="https://cheerx-beer.myshopify.com/cdn/shop/t/3/assets/logo.png?v=8686195976065126741611394010"
