@@ -1,57 +1,76 @@
+import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { NavLink } from "react-router";
 
 const Navbar = () => {
+  const [swapMenuIcon, setSwapMenuIcon] = useState(true);
   return (
     <div
       className={`navbar flex items-center justify-between px-4 bg-[#27211d]`}
     >
       <div className="navbar-start flex justify-between">
+        <div className="drawer lg:hidden">
+          <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            {/* Page content here */}
+            <label
+              onClick={() => setSwapMenuIcon(!swapMenuIcon)}
+              htmlFor="my-drawer-1"
+              className="btn btn-circle drawer-button swap swap-rotate bg-[#27211d] text-accent border-none shadow-none"
+            >
+              {swapMenuIcon === true ? (
+                <IoMdMenu size={23} />
+              ) : (
+                <IoClose size={23} />
+              )}
+            </label>
+          </div>
+          <div className="drawer-side top-16">
+            <div className="menu menu-vertical gap-5 w-60 min-h-screen text-center bg-[#27211d]">
+              <NavLink className="text-accent font-semibold text-lg" to={"/"}>
+                HOME
+              </NavLink>
+              <NavLink
+                className="text-accent font-semibold text-lg"
+                to={"/about"}
+              >
+                ABOUT
+              </NavLink>
+              <NavLink
+                className="text-accent font-semibold text-lg"
+                to={"/shop"}
+              >
+                SHOP
+              </NavLink>
+              <NavLink
+                className="text-accent font-semibold text-lg"
+                to={"/pages"}
+              >
+                PAGES
+              </NavLink>
+              <NavLink
+                className="text-accent font-semibold text-lg"
+                to={"/wishlist"}
+              >
+                WISHLIST
+              </NavLink>
+              <NavLink
+                className="text-accent font-semibold text-lg"
+                to={"/auth/login"}
+              >
+                LOGIN
+              </NavLink>
+            </div>
+          </div>
+        </div>
         <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
             className="text-accent lg:hidden cursor-pointer"
-          >
-            <IoMdMenu size={23} />
-          </div>
-          <div
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-[#27211d] rounded-box z-10 mt-3 w-52 p-2"
-          >
-            <NavLink className="text-accent font-semibold text-lg" to={"/"}>
-              Home
-            </NavLink>
-            <NavLink
-              className="text-accent font-semibold text-lg"
-              to={"/about"}
-            >
-              ABOUT
-            </NavLink>
-            <NavLink className="text-accent font-semibold text-lg" to={"/shop"}>
-              SHOP
-            </NavLink>
-            <NavLink
-              className="text-accent font-semibold text-lg"
-              to={"/pages"}
-            >
-              PAGES
-            </NavLink>
-            <NavLink
-              className="text-accent font-semibold text-lg"
-              to={"/wishlist"}
-            >
-              WISHLIST
-            </NavLink>
-            <NavLink
-              className="text-accent font-semibold text-lg"
-              to={"/auth/login"}
-            >
-              LOGIN
-            </NavLink>
-          </div>
+          ></div>
         </div>
         <div className="w-12 lg:hidden">
           <img
@@ -82,7 +101,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-
           <NavLink className="text-accent font-semibold text-lg" to={"/pages"}>
             PAGES
           </NavLink>

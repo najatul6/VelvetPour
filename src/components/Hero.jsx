@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import 'animate.css'
 const Hero = () => {
      const [activeSlide, setActiveSlide] = useState(1);
-     console.log(activeSlide)
   return (
     <div>
       <div className="carousel w-full">
@@ -48,7 +47,7 @@ const Hero = () => {
             }}
           >
             <div className="absolute left-20 text-neutral-content text-center w-3/6">
-              <div className="flex flex-col gap-2 items-start md:w-9/12">
+              <div className="flex flex-col gap-2 items-start md:w-11/12">
                 <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 2 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css' : ''} `}>
                   Grab chilled
                 </p>
@@ -80,7 +79,7 @@ const Hero = () => {
             }}
           >
             <div className="absolute left-20 text-neutral-content text-center">
-              <div className="flex flex-col gap-2 items-start md:w-9/12">
+              <div className="flex flex-col gap-2 items-start md:w-11/12">
                 <p className={`font-futuraPT text-xl md:text-5xl capitalize ${activeSlide === 3 ? 'animate__animated animate__fadeInLeft animated_fadeIN_css' : ''}`}>
                   exclusive offer
                 </p>
