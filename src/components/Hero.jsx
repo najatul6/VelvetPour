@@ -1,10 +1,40 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import 'animate.css'
 const Hero = () => {
      const [activeSlide, setActiveSlide] = useState(1);
+     const heroRef = useRef(null);
+     const visibleRef = useRef(false);
+       useEffect(() => {
+        const hero = heroRef.current;
+        // observer: if hero is in viewport or not
+        const heroObserver = new IntersectionObserver(
+          (hits) => {
+            visibleRef.current = hits[0].isIntersecting;
+          },
+          {
+            threshold: 0.3
+          }
+        );
+        heroObserver.observe(hero);
+        let current = 0;
+        const interval = setInterval(() => {
+          if(!visibleRef.current) return;
+        const items = hero.querySelectorAll(".carousel-item");
+        current = (current + 1) % items.length;
+        items[current].scrollIntoView({
+          behavior: "smooth",
+          inline: "start",
+        });
+        }, 4000);
+        return () => {
+          heroObserver.disconnect();
+          clearInterval(interval);
+        }
+  } , []);
   return (
     <div>
-      <div className="carousel w-full">
+      <div className="carousel w-full" ref={heroRef}>
+        {/* slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <div
             className="hero min-h-screen"
@@ -38,6 +68,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
+        {/* slide 2 */}
         <div id="slide2" className="carousel-item relative w-full">
           <div
             className="hero min-h-screen object-cover"
@@ -70,6 +101,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
+        {/* slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
           <div
             className="hero min-h-screen"

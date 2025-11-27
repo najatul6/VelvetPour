@@ -28,6 +28,7 @@ const Navbar = () => {
             </label>
           </div>
           <div className="drawer-side top-16">
+            <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
             <div className="menu menu-vertical gap-5 w-60 min-h-screen text-center bg-[#27211d]">
               <NavLink className="text-accent font-semibold text-lg" to={"/"}>
                 HOME
