@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { Link, Links, NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const [swapMenuIcon, setSwapMenuIcon] = useState(true);

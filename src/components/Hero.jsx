@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <div
-            className="hero min-h-screen"
+            className="hero min-h-screen object-cover"
             style={{
               backgroundImage:
                 "url(https://cheerx-beer.myshopify.com/cdn/shop/files/slider3-bg-new_2000x.jpg?v=1613795559)",
