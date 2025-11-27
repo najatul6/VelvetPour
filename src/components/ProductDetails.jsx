@@ -9,9 +9,9 @@ import { Link } from "react-router";
 const ProductDetails = () => {
   return (
     <div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
         {/* round - 1  */}
-        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full">
+        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full lg:col-start-1 lg:row-start-1">
           {/* mask background goes here */}
           <img
             src={maskBg}
@@ -44,9 +44,14 @@ const ProductDetails = () => {
             alt="Rounded ring Covered"
             className="absolute object-cover w-full h-full pointer-events-none group-hover:brightness-0 group-hover:invert"
           />
+        </div>
+        {/* round 1 title and description */}
+        <div className="md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-3 text-center mx-auto w-2/4">
+            <Link to={'/shop'} className="lg:col-start-1 lg:row-start-2 text-white font-americanCap text-4xl tracking-wide hover:text-accent duration-300">Good Making</Link>
+            <p className="text-white text-justify font-futuraPT text-lg">Abundance of antioxidants because the flavonoids in barley and hops.</p>
         </div>
         {/* round - 2  */}
-        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full">
+        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full lg:col-start-2 lg:row-start-2">
           {/* mask background goes here */}
           <img
             src={maskBg}
@@ -80,8 +85,13 @@ const ProductDetails = () => {
             className="absolute object-cover w-full h-full pointer-events-none group-hover:brightness-0 group-hover:invert"
           />
         </div>
+        {/* round 2 title and description */}
+        <div className="lg:col-start-1 lg:row-start-2 text-center mx-auto w-2/4">
+            <Link to={'/shop'} className="lg:col-start-1 lg:row-start-2 text-white font-americanCap text-4xl tracking-wide hover:text-accent duration-300">Quality Hops</Link>
+            <p className="text-white text-justify font-futuraPT text-lg">Production of beer by soaking cereal grains in water and fermenting with yeast.</p>
+        </div>
         {/* round - 3  */}
-        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full">
+        <div className="relative w-80 h-80 mx-auto group flex justify-center items-center object-contain overflow-hidden rounded-full lg:col-start-3 lg:row-start-3">
           {/* mask background goes here */}
           <img
             src={maskBg}
@@ -114,6 +124,11 @@ const ProductDetails = () => {
             alt="Rounded ring Covered"
             className="absolute object-cover w-full h-full pointer-events-none group-hover:brightness-0 group-hover:invert"
           />
+        </div>
+        {/* rounded 3 title and description */}
+        <div className="md:col-start-1 md:row-start-4 lg:col-start-3 lg:row-start-4 text-center mx-auto w-2/4">
+            <Link to={'/shop'} className="col-start-1 row-start-2 text-white font-americanCap text-4xl tracking-wide hover:text-accent duration-300">Premium liquids</Link>
+            <p className="text-white text-justify font-futuraPT text-lg">Reduce the risk of coronary heart disease as it has thinning effect on blood.</p>
         </div>
       </div>
     </div>
@@ -121,32 +136,3 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
-<div className="relative w-80 h-80 mx-auto group">
-  {/* Background */}
-  <img
-    src="/bg.jpg"
-    alt="Background"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-
-  {/* Product */}
-  <img
-    src="/product.png"
-    alt="Product"
-    className="absolute inset-0 m-auto w-48 h-48 object-contain"
-  />
-
-  {/* Overlay on hover */}
-  <img
-    src="/overlay.png"
-    alt="Overlay"
-    className={`absolute inset-0 m-auto w-48 h-48 object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-70`}
-  />
-
-  {/* Rounded Ring */}
-  <img
-    src="/ring.png"
-    alt="Ring"
-    className="absolute inset-0 m-auto w-64 h-64 object-contain pointer-events-none"
-  />
-</div>

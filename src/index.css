@@ -8,7 +8,7 @@
   name: "light";
   default: true;
   /* --color-base-300: #27211d;*/
-  --color-accent: #e07016;
+  --color-accent: #e07016 !important;
   --color-secondary:#27211d;
 }
 @theme {
@@ -33,7 +33,4 @@ body {
 a.active{
   color:white;
 }
-a:hover {
-  color: white;
-  transition: 0.4s;
-}
+

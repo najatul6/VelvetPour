@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 const HomeLayout = () => {
     return (
         <div>
-            <header className='sticky top-0 z-1 shadow-md'>
+            <header className='sticky top-0 z-1 shadow-md w-full bg-secondary'>
                 <Navbar></Navbar>
             </header>
             <main>
